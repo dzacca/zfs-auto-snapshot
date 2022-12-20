@@ -7,7 +7,6 @@ install:
 	install -d $(DESTDIR)/etc/cron.weekly
 	install -d $(DESTDIR)/etc/cron.monthly
 	install -d $(DESTDIR)/etc/zfs-auto-snapshot
-	install etc/zfs-auto-snapshot.cron.hourly   $(DESTDIR)/etc/cron.hourly/zfs-auto-snapshot
 	install etc/zfs-auto-snapshot.cron.daily    $(DESTDIR)/etc/cron.daily/zfs-auto-snapshot
 	install etc/zfs-auto-snapshot.cron.weekly   $(DESTDIR)/etc/cron.weekly/zfs-auto-snapshot
 	install etc/zfs-auto-snapshot.cron.monthly  $(DESTDIR)/etc/cron.monthly/zfs-auto-snapshot

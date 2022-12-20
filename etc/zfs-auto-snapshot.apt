@@ -3,4 +3,4 @@
 # Only call zfs-auto-snapshot if it's available
 which zfs-auto-snapshot > /dev/null || exit 0
 
-exec zfs-auto-snapshot --quiet --syslog --label=apt --keep=5 //
+exec zfs-auto-snapshot --syslog --label=apt --keep=5 //
