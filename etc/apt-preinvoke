@@ -1,0 +1,1 @@
+DPkg::Pre-Invoke {"/etc/zfs-auto-snapshot/zfs-auto-snapshot.apt"; };
