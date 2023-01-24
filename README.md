@@ -21,11 +21,8 @@ I have tuned the cron jobs to suit my personal needs. The cron jobs mimic my set
 - 3 weekly snapshots
 - 2 monthly snapshots
 - 5 apt snapshots
+- 5 boot snapshots
 
 The makefile automatically create the folder `/etc/zfs-auto-snapshot` where  a script is positioned for an apt automation.
 Under `/etc/apt/apt.conf.d` a file is created to pre-invoke our script. The current set-up creates a snapshot with the label `apt` (@zfs-auto-snap_apt) every time apt is invoked to install or update packages and it keeps a rotation of five snapshots.
 
-### TO DO
-
-- Create a script to automate the creation of a snapshot at boot time
-  - In my timeshift set-up I also have a rotation of five snapshots taken at boot
