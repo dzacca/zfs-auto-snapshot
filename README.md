@@ -15,8 +15,8 @@ This program is a posixly correct bourne shell script.  It depends only on the z
 
 I have tuned the cron jobs to suit my personal needs. The cron jobs mimic my setup on timeshit. This is my default schedule:
 
-- No frequent snapshots
-- No hourly snapshots
+- 5 frequent snapshots
+- 24 hourly snapshots
 - 5 daily snapshots
 - 3 weekly snapshots
 - 2 monthly snapshots

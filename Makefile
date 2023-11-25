@@ -8,6 +8,8 @@ install:
 	install -d $(DESTDIR)/etc/cron.monthly
 	install -d $(DESTDIR)/etc/zfs-auto-snapshot
 	install etc/zfs-auto-snapshot.cron.daily    $(DESTDIR)/etc/cron.daily/zfs-auto-snapshot
+	install etc/zfs-auto-snapshot.cron.hourly    $(DESTDIR)/etc/cron.hourly/zfs-auto-snapshot
+	install etc/zfs-auto-snapshot.cron.frequent    $(DESTDIR)/etc/cron.d/zfs-auto-snapshot
 	install etc/zfs-auto-snapshot.cron.weekly   $(DESTDIR)/etc/cron.weekly/zfs-auto-snapshot
 	install etc/zfs-auto-snapshot.cron.monthly  $(DESTDIR)/etc/cron.monthly/zfs-auto-snapshot
 	install -m 0644 etc/zfs-auto-snapshot.cron.boot  $(DESTDIR)/etc/cron.d/zfs-auto-snapshot-boot
@@ -26,4 +28,4 @@ uninstall:
 	rm $(DESTDIR)$(PREFIX)/share/man/man8/zfs-auto-snapshot.8
 	rm $(DESTDIR)$(PREFIX)/sbin/zfs-auto-snapshot
 	rm $(DESTDIR)/etc/apt/apt.conf.d/80-zfs-auto-snapshot
-	rm -f $(DESTDIR)/etc/zfs-auto-snapshot
+	rm -rf $(DESTDIR)/etc/zfs-auto-snapshot
